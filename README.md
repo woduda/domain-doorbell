@@ -80,7 +80,7 @@ That is it. Composer is optional; the project ships its own autoloader.
 ## Install
 
 ```bash
-git clone https://github.com/yourname/domain-doorbell.git
+git clone https://github.com/woduda/domain-doorbell.git
 cd domain-doorbell
 cp config.example.php config.php
 
