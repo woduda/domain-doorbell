@@ -1,0 +1,20 @@
+{
+    "name": "yourname/domain-doorbell",
+    "description": "Measure whether anyone still types your parked domain into a browser.",
+    "type": "project",
+    "license": "MIT",
+    "keywords": ["domain", "parking", "analytics", "type-in", "traffic", "sqlite"],
+    "require": {
+        "php": ">=8.1",
+        "ext-pdo": "*",
+        "ext-pdo_sqlite": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Doorbell\\": "src/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}

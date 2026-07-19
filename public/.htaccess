@@ -1,0 +1,10 @@
+# Route every request that is not a real file to the front controller, so that
+# remembered deep links (/courses/foo) are recorded instead of returning 404.
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^ index.php [L]
+
+# Never serve the database if the document root is misconfigured.
+<FilesMatch "\.(sqlite|sqlite-wal|sqlite-shm)$">
+    Require all denied
+</FilesMatch>

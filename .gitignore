@@ -1,0 +1,9 @@
+/config.php
+/var/
+/vendor/
+*.sqlite
+*.sqlite-wal
+*.sqlite-shm
+.DS_Store
+.idea/
+.phpunit.result.cache
